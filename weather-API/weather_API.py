@@ -1,3 +1,15 @@
+"""
+🌦️ Real-Time Weather API Logger
+
+Description:
+This script fetches real-time weather data using a weather API and logs
+the information into a JSON file for storage and future analysis.
+
+
+Author: Your Name
+Date: 2026-03-18
+"""
+
 import os
 import csv
 from datetime import datetime 
