@@ -1,3 +1,12 @@
+"""
+JSON to CSV Converter
+
+A simple Python utility that reads structured JSON data
+and converts it into a CSV file for easy analysis.
+
+Author: Shrestha Sarangi
+"""
+
 import json
 import csv
 import os
@@ -13,7 +22,7 @@ def load_json_data(filename):
     with open(filename, "r", encoding="utf-8") as f:
         try:
             return json.load(f)
-        except:
+        except json.JSONDecodeError:
             print("Invalid json format.")
 
 def convert_to_csv(data, output_file):
@@ -29,7 +38,7 @@ def convert_to_csv(data, output_file):
         for record in data:
             writer.writerow(record)
 
-    print(f"Converted {len(data)} records to {output_file}")
+    print(f"✅ Converted {len(data)} records to {output_file}")
 
 def main():
     print("Converting JSON to CSV...")
