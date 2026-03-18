@@ -1,0 +1,23 @@
+[
+    {
+        "id":101,
+        "name":"Riya",
+        "email":"riyaexample@gmail.com",
+        "location":"Delhi",
+        "is_active":true
+    },
+    {
+      "id":102,
+        "name":"Aman",
+        "email":"amanexample@gmail.com",
+        "location":"Mumbai",
+        "is_active":false  
+    },
+    {
+        "id":103,
+        "name":"Neha",
+        "email":"nehaexample@gmail.com",
+        "location":"Bangalore",
+        "is_active":true
+    }
+]
